@@ -1,0 +1,22 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : COM and DCOM
+### Category3 : 
+### Description : Returns information about all the DCOM (distributed COM) applications installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_DCOMApplication")
+for objItem in colItems:
+    print "App ID: ", objItem.AppID
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Install Date: ", objItem.InstallDate
+    print "Name: ", objItem.Name
+    print "Status: ", objItem.Status

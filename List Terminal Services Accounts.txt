@@ -1,0 +1,26 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Returns information about all the Terminal Services accounts on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TSAccount")
+for objItem in colItems:
+    print "Account Name: ", objItem.AccountName
+    print "Audit Fail: ", objItem.AuditFail
+    print "Audit Success: ", objItem.AuditSuccess
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Permissions Allowed: ", objItem.PermissionsAllowed
+    print "Permissions Denied: ", objItem.PermissionsDenied
+    print "Setting ID: ", objItem.SettingID
+    print "SID: ", objItem.SID
+    print "Terminal Name: ", objItem.TerminalName

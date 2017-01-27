@@ -1,0 +1,48 @@
+###
+###
+###
+### Category1 : Networking
+### Category2 : Client-Side Management
+### Category3 : Retrieving Network Configuration Information
+### Description : Returns network login information for all the users of a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_NetworkLoginProfile")
+for objItem in colItems:
+    print "Account Expires: ", objItem.AccountExpires
+    print "Authorization Flags: ", objItem.AuthorizationFlags
+    print "Bad Password Count: ", objItem.BadPasswordCount
+    print "Caption: ", objItem.Caption
+    print "Code Page: ", objItem.CodePage
+    print "Comment: ", objItem.Comment
+    print "Country Code: ", objItem.CountryCode
+    print "Description: ", objItem.Description
+    print "Flags: ", objItem.Flags
+    print "Full Name: ", objItem.FullName
+    print "Home Directory: ", objItem.HomeDirectory
+    print "Home Directory Drive: ", objItem.HomeDirectoryDrive
+    print "Last Logoff: ", objItem.LastLogoff
+    print "Last Logon: ", objItem.LastLogon
+    print "Logon Hours: ", objItem.LogonHours
+    print "Logon Server: ", objItem.LogonServer
+    print "Maximum Storage: ", objItem.MaximumStorage
+    print "Name: ", objItem.Name
+    print "Number Of Logons: ", objItem.NumberOfLogons
+    print "Parameters: ", objItem.Parameters
+    print "Password Age: ", objItem.PasswordAge
+    print "Password Expires: ", objItem.PasswordExpires
+    print "Primary GroupId: ", objItem.PrimaryGroupId
+    print "Privileges: ", objItem.Privileges
+    print "Profile: ", objItem.Profile
+    print "Script Path: ", objItem.ScriptPath
+    print "Setting ID: ", objItem.SettingID
+    print "Units Per Week: ", objItem.UnitsPerWeek
+    print "User Comment: ", objItem.UserComment
+    print "User Id: ", objItem.UserId
+    print "User Type: ", objItem.UserType
+    print "Workstations: ", objItem.Workstations

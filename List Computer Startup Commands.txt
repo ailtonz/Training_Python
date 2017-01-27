@@ -1,0 +1,23 @@
+###
+###
+###
+### Category1 : Desktop Management
+### Category2 : Startup and Shutdown
+### Category3 : 
+### Description : Enumerates all startup commands on a computer, including those found in the Startup folder and those found in the Registry.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_StartupCommand")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Command: ", objItem.Command
+    print "Description: ", objItem.Description
+    print "Location: ", objItem.Location
+    print "Name: ", objItem.Name
+    print "Setting ID: ", objItem.SettingID
+    print "User: ", objItem.User

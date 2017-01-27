@@ -1,0 +1,61 @@
+###
+###
+###
+### Category1 : Storage
+### Category2 : Disk Drives and Volumes
+### Category3 : Physical and Logical Disks
+### Description : Returns information about all the floppy disk drives installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_FloppyDrive")
+for objItem in colItems:
+    print "Availability: ", objItem.Availability
+    z = objItem.Capabilities
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Capabilities: ", x
+    z = objItem.CapabilityDescriptions
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Capability Descriptions: ", x
+    print "Caption: ", objItem.Caption
+    print "Compression Method: ", objItem.CompressionMethod
+    print "Config Manager Error Code: ", objItem.ConfigManagerErrorCode
+    print "Config Manager User Config: ", objItem.ConfigManagerUserConfig
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Default Block Size: ", objItem.DefaultBlockSize
+    print "Description: ", objItem.Description
+    print "Device ID: ", objItem.DeviceID
+    print "Error Cleared: ", objItem.ErrorCleared
+    print "Error Description: ", objItem.ErrorDescription
+    print "Error Methodology: ", objItem.ErrorMethodology
+    print "Install Date: ", objItem.InstallDate
+    print "Last Error Code: ", objItem.LastErrorCode
+    print "Manufacturer: ", objItem.Manufacturer
+    print "Max Block Size: ", objItem.MaxBlockSize
+    print "Max Media Size: ", objItem.MaxMediaSize
+    print "Min Block Size: ", objItem.MinBlockSize
+    print "Name: ", objItem.Name
+    print "Needs Cleaning: ", objItem.NeedsCleaning
+    print "Number Of Media Supported: ", objItem.NumberOfMediaSupported
+    print "PNP Device ID: ", objItem.PNPDeviceID
+    z = objItem.PowerManagementCapabilities
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Power Management Capabilities: ", x
+    print "Power Management Supported: ", objItem.PowerManagementSupported
+    print "Status: ", objItem.Status
+    print "Status Info: ", objItem.StatusInfo
+    print "System Creation Class Name: ", objItem.SystemCreationClassName
+    print "System Name: ", objItem.SystemName

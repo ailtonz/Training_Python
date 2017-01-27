@@ -1,0 +1,41 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : Services
+### Category3 : 
+### Description : Retrieves a complete list of services and their associated properties. Information is saved to a text file: C:\Scripts\Service_List.cs.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_Service")
+for objItem in colItems:
+    print "Accept Pause: ", objItem.AcceptPause
+    print "Accept Stop: ", objItem.AcceptStop
+    print "Caption: ", objItem.Caption
+    print "CheckPoint: ", objItem.CheckPoint
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Description: ", objItem.Description
+    print "Desktop Interact: ", objItem.DesktopInteract
+    print "Display Name: ", objItem.DisplayName
+    print "Error Control: ", objItem.ErrorControl
+    print "Exit Code: ", objItem.ExitCode
+    print "Install Date: ", objItem.InstallDate
+    print "Name: ", objItem.Name
+    print "Path Name: ", objItem.PathName
+    print "Process Id: ", objItem.ProcessId
+    print "Service Specific Exit Code: ", objItem.ServiceSpecificExitCode
+    print "Service Type: ", objItem.ServiceType
+    print "Started: ", objItem.Started
+    print "Start Mode: ", objItem.StartMode
+    print "Start Name: ", objItem.StartName
+    print "State: ", objItem.State
+    print "Status: ", objItem.Status
+    print "System Creation Class Name: ", objItem.SystemCreationClassName
+    print "System Name: ", objItem.SystemName
+    print "Tag Id: ", objItem.TagId
+    print "Wait Hint: ", objItem.WaitHint

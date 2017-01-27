@@ -1,0 +1,31 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Video and Display
+### Category3 : 
+### Description : Returns information about the current display settings on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_DisplayConfiguration")
+for objItem in colItems:
+    print "Bits Per Pel: ", objItem.BitsPerPel
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Device Name: ", objItem.DeviceName
+    print "Display Flags: ", objItem.DisplayFlags
+    print "Display Frequency: ", objItem.DisplayFrequency
+    print "Dither Type: ", objItem.DitherType
+    print "Driver Version: ", objItem.DriverVersion
+    print "ICM Intent: ", objItem.ICMIntent
+    print "ICM Method: ", objItem.ICMMethod
+    print "Log Pixels: ", objItem.LogPixels
+    print "Pels Height: ", objItem.PelsHeight
+    print "Pels Width: ", objItem.PelsWidth
+    print "Setting ID: ", objItem.SettingID
+    print "Specification Version: ", objItem.SpecificationVersion

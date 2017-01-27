@@ -1,0 +1,45 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Ports and Slots
+### Category3 : 
+### Description : Enumerates configuration values for all the serial ports installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_SerialPortConfiguration")
+for objItem in colItems:
+    print "Abort Read Write On Error: ", objItem.AbortReadWriteOnError
+    print "Baud Rate: ", objItem.BaudRate
+    print "Binary Mode Enabled: ", objItem.BinaryModeEnabled
+    print "Bits Per Byte: ", objItem.BitsPerByte
+    print "Caption: ", objItem.Caption
+    print "Continue XMitOn XOff: ", objItem.ContinueXMitOnXOff
+    print "CTS Outflow Control: ", objItem.CTSOutflowControl
+    print "Description: ", objItem.Description
+    print "Discard NULL Bytes: ", objItem.DiscardNULLBytes
+    print "DSR Outflow Control: ", objItem.DSROutflowControl
+    print "DSR Sensitivity: ", objItem.DSRSensitivity
+    print "DTR Flow Control Type: ", objItem.DTRFlowControlType
+    print "EOF Character: ", objItem.EOFCharacter
+    print "Error Replace Character: ", objItem.ErrorReplaceCharacter
+    print "Error Replacement Enabled: ", objItem.ErrorReplacementEnabled
+    print "Event Character: ", objItem.EventCharacter
+    print "Is Busy: ", objItem.IsBusy
+    print "Name: ", objItem.Name
+    print "Parity: ", objItem.Parity
+    print "Parity Check Enabled: ", objItem.ParityCheckEnabled
+    print "RTS Flow Control Type: ", objItem.RTSFlowControlType
+    print "Setting ID: ", objItem.SettingID
+    print "Stop Bits: ", objItem.StopBits
+    print "XOff Character: ", objItem.XOffCharacter
+    print "XOff XMit Threshold: ", objItem.XOffXMitThreshold
+    print "XOn Character: ", objItem.XOnCharacter
+    print "XOn XMit Threshold: ", objItem.XOnXMitThreshold
+    print "XOn XOff InFlow Control: ", objItem.XOnXOffInFlowControl
+    print "XOn XOff OutFlow Control: ", objItem.XOnXOffOutFlowControl

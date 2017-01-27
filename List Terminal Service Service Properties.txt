@@ -1,0 +1,46 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Returns information about the Terminal Service service.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TerminalService")
+for objItem in colItems:
+    print "Accept Pause: ", objItem.AcceptPause
+    print "Accept Stop: ", objItem.AcceptStop
+    print "Caption: ", objItem.Caption
+    print "CheckPoint: ", objItem.CheckPoint
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Description: ", objItem.Description
+    print "Desktop Interact: ", objItem.DesktopInteract
+    print "Disconnected Sessions: ", objItem.DisconnectedSessions
+    print "Display Name: ", objItem.DisplayName
+    print "Error Control: ", objItem.ErrorControl
+    print "Estimated Session Capacity: ", objItem.EstimatedSessionCapacity
+    print "Exit Code: ", objItem.ExitCode
+    print "Install Date: ", objItem.InstallDate
+    print "Name: ", objItem.Name
+    print "Path Name: ", objItem.PathName
+    print "Process Id: ", objItem.ProcessId
+    print "Raw Session Capacity: ", objItem.RawSessionCapacity
+    print "Resource Constraint: ", objItem.ResourceConstraint
+    print "Service Specific Exit Code: ", objItem.ServiceSpecificExitCode
+    print "Service Type: ", objItem.ServiceType
+    print "Started: ", objItem.Started
+    print "Start Mode: ", objItem.StartMode
+    print "Start Name: ", objItem.StartName
+    print "State: ", objItem.State
+    print "Status: ", objItem.Status
+    print "System Creation Class Name: ", objItem.SystemCreationClassName
+    print "System Name: ", objItem.SystemName
+    print "Tag Id: ", objItem.TagId
+    print "Total Sessions: ", objItem.TotalSessions
+    print "Wait Hint: ", objItem.WaitHint

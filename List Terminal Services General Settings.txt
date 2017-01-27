@@ -1,0 +1,25 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Returns general information about how Terminal Services has been configured on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TSGeneralSetting")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Comment: ", objItem.Comment
+    print "Description: ", objItem.Description
+    print "Min Encryption Level: ", objItem.MinEncryptionLevel
+    print "Setting ID: ", objItem.SettingID
+    print "Terminal Name: ", objItem.TerminalName
+    print "Terminal Protocol: ", objItem.TerminalProtocol
+    print "Transport: ", objItem.Transport
+    print "Windows Authentication: ", objItem.WindowsAuthentication

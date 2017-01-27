@@ -1,0 +1,35 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Lists the Terminal Service configuration settings on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TerminalServiceSetting")
+for objItem in colItems:
+    print "Active Desktop: ", objItem.ActiveDesktop
+    print "Allow TS Connections: ", objItem.AllowTSConnections
+    print "Caption: ", objItem.Caption
+    print "Delete Temp Folders: ", objItem.DeleteTempFolders
+    print "Description: ", objItem.Description
+    print "Direct Connect License Servers: ", objItem.DirectConnectLicenseServers
+    print "Help: ", objItem.Help
+    print "Home Directory: ", objItem.HomeDirectory
+    print "Licensing Description: ", objItem.LicensingDescription
+    print "Licensing Name: ", objItem.LicensingName
+    print "Licensing Type: ", objItem.LicensingType
+    print "Logons: ", objItem.Logons
+    print "Profile Path: ", objItem.ProfilePath
+    print "Server Name: ", objItem.ServerName
+    print "Setting ID: ", objItem.SettingID
+    print "Single Session: ", objItem.SingleSession
+    print "Terminal Server Mode: ", objItem.TerminalServerMode
+    print "User Permission: ", objItem.UserPermission
+    print "Use Temp Folders: ", objItem.UseTempFolders

@@ -1,0 +1,27 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : COM and DCOM
+### Category3 : 
+### Description : Returns a list of ProgIDs (Programmatic Identifiers) found on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_ProgIDSpecification")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Check ID: ", objItem.CheckID
+    print "Check Mode: ", objItem.CheckMode
+    print "Description: ", objItem.Description
+    print "Name: ", objItem.Name
+    print "Parent: ", objItem.Parent
+    print "ProgID: ", objItem.ProgID
+    print "Software Element ID: ", objItem.SoftwareElementID
+    print "Software Element State: ", objItem.SoftwareElementState
+    print "Target Operating System: ", objItem.TargetOperatingSystem
+    print "Version: ", objItem.Version

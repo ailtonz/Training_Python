@@ -1,0 +1,60 @@
+###
+###
+###
+### Category1 : Logs
+### Category2 : Event Logs
+### Category3 : 
+### Description : Retrieves a list of properties for all the event logs on a computer, except the Security event log.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_NTEventlogFile")
+for objItem in colItems:
+    print "Access Mask: ", objItem.AccessMask
+    print "Archive: ", objItem.Archive
+    print "Caption: ", objItem.Caption
+    print "Compressed: ", objItem.Compressed
+    print "Compression Method: ", objItem.CompressionMethod
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Creation Date: ", objItem.CreationDate
+    print "CS Creation Class Name: ", objItem.CSCreationClassName
+    print "CS Name: ", objItem.CSName
+    print "Description: ", objItem.Description
+    print "Drive: ", objItem.Drive
+    print "Eight Dot Three File Name: ", objItem.EightDotThreeFileName
+    print "Encrypted: ", objItem.Encrypted
+    print "Encryption Method: ", objItem.EncryptionMethod
+    print "Extension: ", objItem.Extension
+    print "File Name: ", objItem.FileName
+    print "File Size: ", objItem.FileSize
+    print "File Type: ", objItem.FileType
+    print "FS Creation Class Name: ", objItem.FSCreationClassName
+    print "FS Name: ", objItem.FSName
+    print "Hidden: ", objItem.Hidden
+    print "Install Date: ", objItem.InstallDate
+    print "In Use Count: ", objItem.InUseCount
+    print "Last Accessed: ", objItem.LastAccessed
+    print "Last Modified: ", objItem.LastModified
+    print "Logfile Name: ", objItem.LogfileName
+    print "Manufacturer: ", objItem.Manufacturer
+    print "Max File Size: ", objItem.MaxFileSize
+    print "Name: ", objItem.Name
+    print "Number Of Records: ", objItem.NumberOfRecords
+    print "Overwrite OutDated: ", objItem.OverwriteOutDated
+    print "OverWrite Policy: ", objItem.OverWritePolicy
+    print "Path: ", objItem.Path
+    print "Readable: ", objItem.Readable
+    z = objItem.Sources
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Sources: ", x
+    print "Status: ", objItem.Status
+    print "System: ", objItem.System
+    print "Version: ", objItem.Version
+    print "Writeable: ", objItem.Writeable

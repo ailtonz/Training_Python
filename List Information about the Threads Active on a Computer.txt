@@ -1,0 +1,38 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : Processes
+### Category3 : Processes and Threads
+### Description : Returns a list of threads and thread states for each process running on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_Thread")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "CS Creation Class Name: ", objItem.CSCreationClassName
+    print "CS Name: ", objItem.CSName
+    print "Description: ", objItem.Description
+    print "Elapsed Time: ", objItem.ElapsedTime
+    print "Execution State: ", objItem.ExecutionState
+    print "Handle: ", objItem.Handle
+    print "Install Date: ", objItem.InstallDate
+    print "Kernel Mode Time: ", objItem.KernelModeTime
+    print "Name: ", objItem.Name
+    print "OS Creation Class Name: ", objItem.OSCreationClassName
+    print "OS Name: ", objItem.OSName
+    print "Priority: ", objItem.Priority
+    print "Priority Base: ", objItem.PriorityBase
+    print "Process Creation Class Name: ", objItem.ProcessCreationClassName
+    print "Process Handle: ", objItem.ProcessHandle
+    print "Start Address: ", objItem.StartAddress
+    print "Status: ", objItem.Status
+    print "Thread State: ", objItem.ThreadState
+    print "Thread Wait Reason: ", objItem.ThreadWaitReason
+    print "User Mode Time: ", objItem.UserModeTime

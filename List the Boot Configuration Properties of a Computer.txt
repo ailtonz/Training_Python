@@ -1,0 +1,25 @@
+###
+###
+###
+### Category1 : Desktop Management
+### Category2 : Startup and Shutdown
+### Category3 : 
+### Description : Returns boot configuration information for a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_BootConfiguration")
+for objItem in colItems:
+    print "Boot Directory: ", objItem.BootDirectory
+    print "Caption: ", objItem.Caption
+    print "Configuration Path: ", objItem.ConfigurationPath
+    print "Description: ", objItem.Description
+    print "Last Drive: ", objItem.LastDrive
+    print "Name: ", objItem.Name
+    print "Scratch Directory: ", objItem.ScratchDirectory
+    print "Setting ID: ", objItem.SettingID
+    print "Temp Directory: ", objItem.TempDirectory

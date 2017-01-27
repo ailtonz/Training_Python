@@ -1,0 +1,28 @@
+###
+###
+###
+### Category1 : Applications
+### Category2 : User
+### Category3 : 
+### Description : Returns a list of software that was installed on a computer using Windows Installer. This information is then written to a text file.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_Product")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Identifying Number: ", objItem.IdentifyingNumber
+    print "Install Date: ", objItem.InstallDate
+    print "Install Date 2: ", objItem.InstallDate2
+    print "Install Location: ", objItem.InstallLocation
+    print "Install State: ", objItem.InstallState
+    print "Name: ", objItem.Name
+    print "Package Cache: ", objItem.PackageCache
+    print "SKU Number: ", objItem.SKUNumber
+    print "Vendor: ", objItem.Vendor
+    print "Version: ", objItem.Version
