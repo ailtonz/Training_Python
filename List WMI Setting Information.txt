@@ -1,0 +1,48 @@
+###
+###
+###
+### Category1 : Scripting Techniques
+### Category2 : WMI
+### Category3 : 
+### Description : Returns information about how WMI has been configured on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_WMISetting")
+for objItem in colItems:
+    print "ASP Script Default Namespace: ", objItem.ASPScriptDefaultNamespace
+    print "ASP Script Enabled: ", objItem.ASPScriptEnabled
+    z = objItem.AutorecoverMofs
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Autorecover Mofs: ", x
+    print "AutoStart Win9X: ", objItem.AutoStartWin9X
+    print "Backup Interval: ", objItem.BackupInterval
+    print "Backup Last Time: ", objItem.BackupLastTime
+    print "Build Version: ", objItem.BuildVersion
+    print "Caption: ", objItem.Caption
+    print "Database Directory: ", objItem.DatabaseDirectory
+    print "Database Max Size: ", objItem.DatabaseMaxSize
+    print "Description: ", objItem.Description
+    print "Enable Anon Win9x Connections: ", objItem.EnableAnonWin9xConnections
+    print "Enable Events: ", objItem.EnableEvents
+    print "Enable Startup Heap Preallocation: ", objItem.EnableStartupHeapPreallocation
+    print "High Threshold On Client Objects: ", objItem.HighThresholdOnClientObjects
+    print "High Threshold On Events: ", objItem.HighThresholdOnEvents
+    print "Installation Directory: ", objItem.InstallationDirectory
+    print "Last Startup Heap Preallocation: ", objItem.LastStartupHeapPreallocation
+    print "Logging Directory: ", objItem.LoggingDirectory
+    print "Logging Level: ", objItem.LoggingLevel
+    print "Low Threshold On Client Objects: ", objItem.LowThresholdOnClientObjects
+    print "Low Threshold On Events: ", objItem.LowThresholdOnEvents
+    print "Max Log File Size: ", objItem.MaxLogFileSize
+    print "Max Wait On Client Objects: ", objItem.MaxWaitOnClientObjects
+    print "Max Wait On Events: ", objItem.MaxWaitOnEvents
+    print "Mof Self-Install Directory: ", objItem.MofSelfInstallDirectory
+    print "Setting ID: ", objItem.SettingID

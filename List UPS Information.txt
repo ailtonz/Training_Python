@@ -1,0 +1,64 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Batteries and Power Supplies
+### Category3 : 
+### Description : Lists information about the uninterruptible power sources attached to a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_UninterruptiblePowerSupply")
+for objItem in colItems:
+    print "Active Input Voltage: ", objItem.ActiveInputVoltage
+    print "Availability: ", objItem.Availability
+    print "Battery Installed: ", objItem.BatteryInstalled
+    print "Can Turn Off Remotely: ", objItem.CanTurnOffRemotely
+    print "Caption: ", objItem.Caption
+    print "Command File: ", objItem.CommandFile
+    print "Config Manager Error Code: ", objItem.ConfigManagerErrorCode
+    print "Config Manager User Config: ", objItem.ConfigManagerUserConfig
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Description: ", objItem.Description
+    print "Device ID: ", objItem.DeviceID
+    print "Error Cleared: ", objItem.ErrorCleared
+    print "Error Description: ", objItem.ErrorDescription
+    print "Estimated Charge Remaining: ", objItem.EstimatedChargeRemaining
+    print "Estimated Run Time: ", objItem.EstimatedRunTime
+    print "First Message Delay: ", objItem.FirstMessageDelay
+    print "Install Date: ", objItem.InstallDate
+    print "Is Switching Supply: ", objItem.IsSwitchingSupply
+    print "Last Error Code: ", objItem.LastErrorCode
+    print "Low Battery Signal: ", objItem.LowBatterySignal
+    print "Message Interval: ", objItem.MessageInterval
+    print "Name: ", objItem.Name
+    print "PNP Device ID: ", objItem.PNPDeviceID
+    print "Power Fail Signal: ", objItem.PowerFailSignal
+    z = objItem.PowerManagementCapabilities
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Power Management Capabilities: ", x
+    print "Power Management Supported: ", objItem.PowerManagementSupported
+    print "Range 1 Input Frequency High: ", objItem.Range1InputFrequencyHigh
+    print "Range 1 Input Frequency Low: ", objItem.Range1InputFrequencyLow
+    print "Range 1 Input Voltage High: ", objItem.Range1InputVoltageHigh
+    print "Range 1 Input Voltage Low: ", objItem.Range1InputVoltageLow
+    print "Range 2 Input Frequency High: ", objItem.Range2InputFrequencyHigh
+    print "Range 2 Input Frequency Low: ", objItem.Range2InputFrequencyLow
+    print "Range 2 Input Voltage High: ", objItem.Range2InputVoltageHigh
+    print "Range 2 Input Voltage Low: ", objItem.Range2InputVoltageLow
+    print "Remaining Capacity Status: ", objItem.RemainingCapacityStatus
+    print "Status: ", objItem.Status
+    print "Status Info: ", objItem.StatusInfo
+    print "System Creation Class Name: ", objItem.SystemCreationClassName
+    print "System Name: ", objItem.SystemName
+    print "Time On Backup: ", objItem.TimeOnBackup
+    print "Total Output Power: ", objItem.TotalOutputPower
+    print "Type Of Range Switching: ", objItem.TypeOfRangeSwitching
+    print "UPS Port: ", objItem.UPSPort

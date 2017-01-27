@@ -1,0 +1,90 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Video and Display
+### Category3 : 
+### Description : Retrieves information about the video controller installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_VideoController")
+for objItem in colItems:
+    z = objItem.AcceleratorCapabilities
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Accelerator Capabilities: ", x
+    print "Adapter Compatibility: ", objItem.AdapterCompatibility
+    print "Adapter DAC Type: ", objItem.AdapterDACType
+    print "Adapter RAM: ", objItem.AdapterRAM
+    print "Availability: ", objItem.Availability
+    z = objItem.CapabilityDescriptions
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Capability Descriptions: ", x
+    print "Caption: ", objItem.Caption
+    print "Color Table Entries: ", objItem.ColorTableEntries
+    print "Config Manager Error Code: ", objItem.ConfigManagerErrorCode
+    print "Config Manager User Config: ", objItem.ConfigManagerUserConfig
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Current Bits Per Pixel: ", objItem.CurrentBitsPerPixel
+    print "Current Horizontal Resolution: ", objItem.CurrentHorizontalResolution
+    print "Current Number Of Colors: ", objItem.CurrentNumberOfColors
+    print "Current Number Of Columns: ", objItem.CurrentNumberOfColumns
+    print "Current Number Of Rows: ", objItem.CurrentNumberOfRows
+    print "Current Refresh Rate: ", objItem.CurrentRefreshRate
+    print "Current Scan Mode: ", objItem.CurrentScanMode
+    print "Current Vertical Resolution: ", objItem.CurrentVerticalResolution
+    print "Description: ", objItem.Description
+    print "Device ID: ", objItem.DeviceID
+    print "Device Specific Pens: ", objItem.DeviceSpecificPens
+    print "Dither Type: ", objItem.DitherType
+    print "Driver Date: ", objItem.DriverDate
+    print "Driver Version: ", objItem.DriverVersion
+    print "Error Cleared: ", objItem.ErrorCleared
+    print "Error Description: ", objItem.ErrorDescription
+    print "ICM Intent: ", objItem.ICMIntent
+    print "ICM Method: ", objItem.ICMMethod
+    print "Inf Filename: ", objItem.InfFilename
+    print "Inf Section: ", objItem.InfSection
+    print "Install Date: ", objItem.InstallDate
+    print "Installed Display Drivers: ", objItem.InstalledDisplayDrivers
+    print "Last Error Code: ", objItem.LastErrorCode
+    print "Max Memory Supported: ", objItem.MaxMemorySupported
+    print "Max Number Controlled: ", objItem.MaxNumberControlled
+    print "Max Refresh Rate: ", objItem.MaxRefreshRate
+    print "Min Refresh Rate: ", objItem.MinRefreshRate
+    print "Monochrome: ", objItem.Monochrome
+    print "Name: ", objItem.Name
+    print "Number Of Color Planes: ", objItem.NumberOfColorPlanes
+    print "Number Of Video Pages: ", objItem.NumberOfVideoPages
+    print "PNP Device ID: ", objItem.PNPDeviceID
+    z = objItem.PowerManagementCapabilities
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Power Management Capabilities: ", x
+    print "Power Management Supported: ", objItem.PowerManagementSupported
+    print "Protocol Supported: ", objItem.ProtocolSupported
+    print "Reserved System Palette Entries: ", objItem.ReservedSystemPaletteEntries
+    print "Specification Version: ", objItem.SpecificationVersion
+    print "Status: ", objItem.Status
+    print "Status Info: ", objItem.StatusInfo
+    print "System Creation Class Name: ", objItem.SystemCreationClassName
+    print "System Name: ", objItem.SystemName
+    print "System Palette Entries: ", objItem.SystemPaletteEntries
+    print "Time Of Last Reset: ", objItem.TimeOfLastReset
+    print "Video Architecture: ", objItem.VideoArchitecture
+    print "Video Memory Type: ", objItem.VideoMemoryType
+    print "Video Mode: ", objItem.VideoMode
+    print "Video Mode Description: ", objItem.VideoModeDescription
+    print "Video Processor: ", objItem.VideoProcessor
