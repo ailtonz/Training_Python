@@ -1,0 +1,27 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Returns Terminal Service session configuration information.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TSSessionSetting")
+for objItem in colItems:
+    print "Active Session Limit: ", objItem.ActiveSessionLimit
+    print "Broken Connection Action: ", objItem.BrokenConnectionAction
+    print "Broken Connection Policy: ", objItem.BrokenConnectionPolicy
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Disconnected Session Limit: ", objItem.DisconnectedSessionLimit
+    print "Idle Session Limit: ", objItem.IdleSessionLimit
+    print "Reconnection Policy: ", objItem.ReconnectionPolicy
+    print "Setting ID: ", objItem.SettingID
+    print "Terminal Name: ", objItem.TerminalName
+    print "Time Limit Policy: ", objItem.TimeLimitPolicy

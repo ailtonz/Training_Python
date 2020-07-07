@@ -1,0 +1,73 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : Version Information
+### Category3 : 
+### Description : Retrieves information about the operating system installed on a computer, including language, encryption level, and build number.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_OperatingSystem")
+for objItem in colItems:
+    print "Boot Device: ", objItem.BootDevice
+    print "Build Number: ", objItem.BuildNumber
+    print "Build Type: ", objItem.BuildType
+    print "Caption: ", objItem.Caption
+    print "Code Set: ", objItem.CodeSet
+    print "Country Code: ", objItem.CountryCode
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "CS Creation Class Name: ", objItem.CSCreationClassName
+    print "CSD Version: ", objItem.CSDVersion
+    print "CS Name: ", objItem.CSName
+    print "Current Time Zone: ", objItem.CurrentTimeZone
+    print "Debug: ", objItem.Debug
+    print "Description: ", objItem.Description
+    print "Distributed: ", objItem.Distributed
+    print "Encryption Level: ", objItem.EncryptionLevel
+    print "Foreground Application Boost: ", objItem.ForegroundApplicationBoost
+    print "Free Physical Memory: ", objItem.FreePhysicalMemory
+    print "Free Space In Paging Files: ", objItem.FreeSpaceInPagingFiles
+    print "Free Virtual Memory: ", objItem.FreeVirtualMemory
+    print "Install Date: ", objItem.InstallDate
+    print "Large System Cache: ", objItem.LargeSystemCache
+    print "Last BootUp Time: ", objItem.LastBootUpTime
+    print "Local Date Time: ", objItem.LocalDateTime
+    print "Locale: ", objItem.Locale
+    print "Manufacturer: ", objItem.Manufacturer
+    print "Max Number Of Processes: ", objItem.MaxNumberOfProcesses
+    print "Max Process Memory Size: ", objItem.MaxProcessMemorySize
+    print "Name: ", objItem.Name
+    print "Number Of Licensed Users: ", objItem.NumberOfLicensedUsers
+    print "Number Of Processes: ", objItem.NumberOfProcesses
+    print "Number Of Users: ", objItem.NumberOfUsers
+    print "Organization: ", objItem.Organization
+    print "OS Language: ", objItem.OSLanguage
+    print "OS Product Suite: ", objItem.OSProductSuite
+    print "OS Type: ", objItem.OSType
+    print "Other Type Description: ", objItem.OtherTypeDescription
+    print "Plus Product ID: ", objItem.PlusProductID
+    print "Plus Version Number: ", objItem.PlusVersionNumber
+    print "Primary: ", objItem.Primary
+    print "Product Type: ", objItem.ProductType
+    print "Quantum Length: ", objItem.QuantumLength
+    print "Quantum Type: ", objItem.QuantumType
+    print "Registered User: ", objItem.RegisteredUser
+    print "Serial Number: ", objItem.SerialNumber
+    print "Service Pack Major Version: ", objItem.ServicePackMajorVersion
+    print "Service Pack Minor Version: ", objItem.ServicePackMinorVersion
+    print "Size Stored In Paging Files: ", objItem.SizeStoredInPagingFiles
+    print "Status: ", objItem.Status
+    print "Suite Mask: ", objItem.SuiteMask
+    print "System Device: ", objItem.SystemDevice
+    print "System Directory: ", objItem.SystemDirectory
+    print "System Drive: ", objItem.SystemDrive
+    print "Total Swap Space Size: ", objItem.TotalSwapSpaceSize
+    print "Total Virtual Memory Size: ", objItem.TotalVirtualMemorySize
+    print "Total Visible Memory Size: ", objItem.TotalVisibleMemorySize
+    print "Version: ", objItem.Version
+    print "Windows Directory: ", objItem.WindowsDirectory

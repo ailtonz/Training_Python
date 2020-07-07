@@ -1,0 +1,26 @@
+###
+###
+###
+### Category1 : Storage
+### Category2 : Shared Folders
+### Category3 : 
+### Description : Lists all the shared folders on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_Share")
+for objItem in colItems:
+    print "Access Mask: ", objItem.AccessMask
+    print "Allow Maximum: ", objItem.AllowMaximum
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Install Date: ", objItem.InstallDate
+    print "Maximum Allowed: ", objItem.MaximumAllowed
+    print "Name: ", objItem.Name
+    print "Path: ", objItem.Path
+    print "Status: ", objItem.Status
+    print "Type: ", objItem.Type

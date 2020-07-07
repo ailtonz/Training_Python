@@ -1,0 +1,36 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Basic Hardware and Firmware
+### Category3 : 
+### Description : Returns information about devices built into the motherboard installed in a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_OnBoardDevice")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Description: ", objItem.Description
+    print "Device Type: ", objItem.DeviceType
+    print "Enabled: ", objItem.Enabled
+    print "Hot Swappable: ", objItem.HotSwappable
+    print "Install Date: ", objItem.InstallDate
+    print "Manufacturer: ", objItem.Manufacturer
+    print "Model: ", objItem.Model
+    print "Name: ", objItem.Name
+    print "Other Identifying Info: ", objItem.OtherIdentifyingInfo
+    print "Part Number: ", objItem.PartNumber
+    print "Powered On: ", objItem.PoweredOn
+    print "Removable: ", objItem.Removable
+    print "Replaceable: ", objItem.Replaceable
+    print "Serial Number: ", objItem.SerialNumber
+    print "SKU: ", objItem.SKU
+    print "Status: ", objItem.Status
+    print "Tag: ", objItem.Tag
+    print "Version: ", objItem.Version

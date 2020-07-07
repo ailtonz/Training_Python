@@ -1,0 +1,24 @@
+###
+###
+###
+### Category1 : Terminal Services
+### Category2 : Retrieving Terminal Service Properties
+### Category3 : 
+### Description : Returns information about the Terminal Service client environment settings configured on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_TSEnvironmentSetting")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Client WallPaper: ", objItem.ClientWallPaper
+    print "Description: ", objItem.Description
+    print "Initial Program Path: ", objItem.InitialProgramPath
+    print "Initial Program Policy: ", objItem.InitialProgramPolicy
+    print "Setting ID: ", objItem.SettingID
+    print "Start in: ", objItem.Startin
+    print "Terminal Name: ", objItem.TerminalName

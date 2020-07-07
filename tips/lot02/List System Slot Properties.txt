@@ -1,0 +1,62 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Ports and Slots
+### Category3 : 
+### Description : Returns information about the system slots installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_SystemSlot")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "Connector Pinout: ", objItem.ConnectorPinout
+    z = objItem.ConnectorType
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Connector Type: ", x
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "Current Usage: ", objItem.CurrentUsage
+    print "Description: ", objItem.Description
+    print "Height Allowed: ", objItem.HeightAllowed
+    print "Install Date: ", objItem.InstallDate
+    print "Length Allowed: ", objItem.LengthAllowed
+    print "Manufacturer: ", objItem.Manufacturer
+    print "Max Data Width: ", objItem.MaxDataWidth
+    print "Model: ", objItem.Model
+    print "Name: ", objItem.Name
+    print "Number: ", objItem.Number
+    print "Other Identifying Info: ", objItem.OtherIdentifyingInfo
+    print "Part Number: ", objItem.PartNumber
+    print "PME Signal: ", objItem.PMESignal
+    print "Powered On: ", objItem.PoweredOn
+    print "Purpose Description: ", objItem.PurposeDescription
+    print "Serial Number: ", objItem.SerialNumber
+    print "Shared: ", objItem.Shared
+    print "SKU: ", objItem.SKU
+    print "Slot Designation: ", objItem.SlotDesignation
+    print "Special Purpose: ", objItem.SpecialPurpose
+    print "Status: ", objItem.Status
+    print "Supports Hot Plug: ", objItem.SupportsHotPlug
+    print "Tag: ", objItem.Tag
+    print "Thermal Rating: ", objItem.ThermalRating
+    z = objItem.VccMixedVoltageSupport
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Vcc Mixed Voltage Support: ", x
+    print "Version: ", objItem.Version
+    z = objItem.VppMixedVoltageSupport
+    if z is None:
+        a = 1
+    else:
+        for x in z:
+            print "Vpp Mixed Voltage Support: ", x

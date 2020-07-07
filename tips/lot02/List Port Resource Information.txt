@@ -1,0 +1,27 @@
+###
+###
+###
+### Category1 : Hardware
+### Category2 : Ports and Slots
+### Category3 : 
+### Description : Returns information about all the I/O ports found on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_PortResource")
+for objItem in colItems:
+    print "Alias: ", objItem.Alias
+    print "Caption: ", objItem.Caption
+    print "Creation Class Name: ", objItem.CreationClassName
+    print "CS Creation Class Name: ", objItem.CSCreationClassName
+    print "CS Name: ", objItem.CSName
+    print "Description: ", objItem.Description
+    print "Ending Address: ", objItem.EndingAddress
+    print "Install Date: ", objItem.InstallDate
+    print "Name: ", objItem.Name
+    print "Starting Address: ", objItem.StartingAddress
+    print "Status: ", objItem.Status

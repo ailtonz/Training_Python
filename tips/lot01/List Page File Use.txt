@@ -1,0 +1,25 @@
+###
+###
+###
+### Category1 : Operating System
+### Category2 : Page Files
+### Category3 : 
+### Description : Retrieves page file usage statistics.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_PageFileUsage")
+for objItem in colItems:
+    print "Allocated Base Size: ", objItem.AllocatedBaseSize
+    print "Caption: ", objItem.Caption
+    print "Current Usage: ", objItem.CurrentUsage
+    print "Description: ", objItem.Description
+    print "Install Date: ", objItem.InstallDate
+    print "Name: ", objItem.Name
+    print "Peak Usage: ", objItem.PeakUsage
+    print "Status: ", objItem.Status
+    print "Temp PageFile: ", objItem.TempPageFile

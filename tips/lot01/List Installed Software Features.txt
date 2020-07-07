@@ -1,0 +1,29 @@
+###
+###
+###
+### Category1 : Applications
+### Category2 : User
+### Category3 : 
+### Description : Returns a list of features for all the software installed on a computer using Windows Installer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_SoftwareFeature")
+for objItem in colItems:
+    print "Accesses: ", objItem.Accesses
+    print "Attributes: ", objItem.Attributes
+    print "Caption: ", objItem.Caption
+    print "Description: ", objItem.Description
+    print "Identifying Number: ", objItem.IdentifyingNumber
+    print "Install Date: ", objItem.InstallDate
+    print "Install State: ", objItem.InstallState
+    print "Last Use: ", objItem.LastUse
+    print "Name: ", objItem.Name
+    print "Product Name: ", objItem.ProductName
+    print "Status: ", objItem.Status
+    print "Vendor: ", objItem.Vendor
+    print "Version: ", objItem.Version

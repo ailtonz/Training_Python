@@ -1,0 +1,548 @@
+[
+   {
+      "categoria": "Git",
+      "link": "https://www.udemy.com/course/git-e-github-para-iniciantes/learn/lecture/5120582#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Git e Github para iniciantes"
+   },
+   {
+      "categoria": "GitHub",
+      "link": "https://www.udemy.com/course/github-pages/learn/lecture/5336318#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Criar p\u00E1ginas web com o GitHub Pages."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/aprendahtml/learn/lecture/6777802#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda HTML 5 de forma simples e r\u00E1pida, da mesma forma que alunos de Gradua\u00E7\u00E3o aprendem, sem precisar fazer Faculdade."
+   },
+   {
+      "categoria": "HTML5",
+      "link": "https://www.udemy.com/course/aprendahtml/learn/lecture/16963152#overview",
+      "conta": "Sakonarthur",
+      "descricao": "HTML5 para quem n\u00E3o sabe nada de HTML5"
+   },
+   {
+      "categoria": "Jekyll",
+      "link": "https://www.udemy.com/course/draft/1243098/learn/lecture/7225262#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda a criar sites est\u00E1ticos com o Jekyll e hospedar diretamente no Github Pages."
+   },
+   {
+      "categoria": "Jekyll",
+      "link": "https://www.udemy.com/course/draft/1243098/learn/lecture/7225194#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Criando sites est\u00E1ticos com Jekyll"
+   },
+   {
+      "categoria": "Markdown",
+      "link": "https://www.udemy.com/course/aprenda-markdown/learn/lecture/7459932#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda tudo sobre Markdown em 35 minutos com um mini-curso gratuito de 14 v\u00EDdeo-aulas."
+   },
+   {
+      "categoria": "Spring Boot 2.x e Docker",
+      "link": "https://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/",
+      "conta": "ailtonzsilva",
+      "descricao": "REST API's RESTFul do 0 \u00E0 Nuvem Com Spring Boot 2.x e Docker"
+   },
+   {
+      "categoria": "Spring Boot e Java 8",
+      "link": "https://www.udemy.com/course/api-restful-avancada-spring-boot-java-8/",
+      "conta": "ailtonzsilva",
+      "descricao": "API RESTful avan\u00E7ada com Spring Boot e Java 8"
+   },
+   {
+      "categoria": "Spring Boot e Java 8 - Guia de Refer\u00EAncia",
+      "link": "https://www.udemy.com/course/api-restful-spring-boot-java-8-guia-referencia/",
+      "conta": "ailtonzsilva",
+      "descricao": "API RESTful com Spring Boot e Java 8 - Guia de Refer\u00EAncia"
+   },
+   {
+      "categoria": "Java 10",
+      "link": "https://www.udemy.com/course/algoritmos-programacao-em-java-10/learn/lecture/11754228#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Curso Completo Programa\u00E7\u00E3o para Iniciantes em JAVA 10"
+   },
+   {
+      "categoria": "Java 13",
+      "link": "https://www.udemy.com/course/fundamentos-de-programacao-com-java/learn/lecture/15923756#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Java 13 COMPLETO: Do Zero ao Profissional + Projetos Reais!"
+   },
+   {
+      "categoria": "Java Full Stack with Spring Boot",
+      "link": "https://www.udemy.com/course/full-stack-application-development-with-spring-boot-and-angular/learn/lecture/12537722#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Go Java Full Stack with Spring Boot and Angular"
+   },
+   {
+      "categoria": "Java JUnit",
+      "link": "https://www.udemy.com/course/testes-unidade-automaticos-software-junit/learn/lecture/6982766#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Testes Unit\u00E1rios em Java Utilizando o JUnit"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/inteligencia-artificial-buscas-em-textos-com-python/learn/lecture/9128998#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "busca de textos com python"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/intro_python/learn/lecture/11785468#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Introdu\u00E7\u00E3o \u00E0 linguagem Python"
+   },
+   {
+      "categoria": "Python 3",
+      "link": "https://www.udemy.com/course/python-3-completo/learn/lecture/8113300#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Python 3 COMPLETO - Do iniciante ao avan\u00E7ado!"
+   },
+   {
+      "categoria": "Python 3",
+      "link": "https://www.udemy.com/course/python-3-na-web-com-django-basico-intermediario/learn/lecture/4791586#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Como desenvolver incr\u00EDveis aplica\u00E7\u00F5es web de forma r\u00E1pida"
+   },
+   {
+      "categoria": "Python3 - E-Commerce",
+      "link": "https://www.udemy.com/course/construa-um-e-commerce-com-python-3-e-django/learn/lecture/5510576#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Como construir uma plataforma de E-Commerce com Python 3 e Django"
+   },
+   {
+      "categoria": "Vim",
+      "link": "https://www.udemy.com/course/vim-aumenta-tu-velocidad-de-desarrollo/learn/lecture/15495850#overview",
+      "conta": "masantoro83",
+      "descricao": "Empieza siendo productivo con Vim en Linux, windows, Mac y Unix"
+   },
+   {
+      "categoria": "VsCode",
+      "link": "https://www.udemy.com/course/vscode-frontend/learn/lecture/14446500#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda a atingir a produtividade infinita com o Visual Studio Code e tornar-se um programador infinitamente melhor!"
+   },
+   {
+      "categoria": "Linux",
+      "link": "https://www.udemy.com/course/linux-ubuntu/learn/lecture/12869420#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Conhe\u00E7a o Linux atrav\u00E9s do Ubuntu 18.04 e aprenda a utilizar o terminal e construir programas com Shell Script"
+   },
+   {
+      "categoria": "Linux",
+      "link": "https://www.udemy.com/course/terminal-de-comandos-linux/learn/lecture/12868082#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Curso introdut\u00F3rio r\u00E1pido e pr\u00E1tico sobre terminal Linux (bash) e shell script"
+   },
+   {
+      "categoria": "Docker",
+      "link": "https://www.udemy.com/course/curso-docker/learn/lecture/7564242#overview",
+      "conta": "masantoro83",
+      "descricao": "Aprenda a criar ambientes profissionais completos com Docker, que \u00E9 a principal tecnologia de containers do mercado!"
+   },
+   {
+      "categoria": "Docker",
+      "link": "https://www.udemy.com/course/docker-mastery/learn/lecture/6762270#overview",
+      "conta": "ribeiro.rs",
+      "descricao": "Docker Mastery: with Kubernetes +Swarm from a Docker Captain"
+   },
+   {
+      "categoria": "Docker",
+      "link": "https://www.udemy.com/course/understanding-docker-performing-selenium-automation/learn/lecture/5639274#overview",
+      "conta": "masantoro83",
+      "descricao": "Learn docker and containers from complete ground up"
+   },
+   {
+      "categoria": "accenture",
+      "link": "https://broadcast.accenture.com/events",
+      "conta": "accenture",
+      "descricao": ""
+   },
+   {
+      "categoria": "Algoritmos",
+      "link": "https://www.udemy.com/course/algoritmos-logica-programacao/learn/lecture/9762578#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Algoritmos e L\u00F3gica de programa\u00E7\u00E3o"
+   },
+   {
+      "categoria": "Algoritmos",
+      "link": "https://www.udemy.com/course/curso-de-algoritmos-e-logica-de-programacao/learn/lecture/8974326#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Curso de Algoritmos e L\u00F3gica de Programa\u00E7\u00E3o"
+   },
+   {
+      "categoria": "Apache Spark",
+      "link": "https://www.udemy.com/course/big-data-com-apache-spark-e-pyspark/learn/lecture/10373060#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Crie o seu servidor Apache Spark, processe grandes quantidades e fa\u00E7a um streaming em tempo real utilizando PySpark :)"
+   },
+   {
+      "categoria": "AWS EC2",
+      "link": "https://www.udemy.com/course/amazon-web-services-aws-v/learn/lecture/7834634#overview",
+      "conta": "masantoro83",
+      "descricao": "Beginners, Zero to Hero. AWS EC2 web server, NodeJS Server, AWS RDS database server, S3, SES & CloudWatch. FREE"
+   },
+   {
+      "categoria": "AZ-203",
+      "link": "https://www.udemy.com/course/70532-azure/learn/lecture/13361632#overview",
+      "conta": "masantoro83",
+      "descricao": "The most complete course available on the Microsoft Azure developer exam AZ-203 with timed practice test."
+   },
+   {
+      "categoria": "AZ-900",
+      "link": "https://www.udemy.com/course/az-900-azure-exam-prep-understand-azure-pricing-support/learn/lecture/13586476#overview",
+      "conta": "masantoro83",
+      "descricao": "Learn About Azure Pricing and Support for the AZ-900 Microsoft Azure Fundamentals Certification Exam"
+   },
+   {
+      "categoria": "AZ-900",
+      "link": "https://www.udemy.com/course/az-900-azure-exam-prep-security-privacy-compliance-trust/learn/lecture/13144182#overview",
+      "conta": "masantoro83",
+      "descricao": "Learn About Security, Privacy, Compliance, and Trust for the AZ-900 Microsoft Azure Fundamentals Certification Exam"
+   },
+   {
+      "categoria": "AZ-900",
+      "link": "https://www.udemy.com/course/az-900-azure-exam-prep-understanding-cloud-concepts/learn/lecture/18041925#overview",
+      "conta": "masantoro83",
+      "descricao": "Prepare for the AZ-900 Exam with this Comprehensive AZ-900 Course + 50-Question Exam! (UPDATED FEB 2020)"
+   },
+   {
+      "categoria": "big data",
+      "link": "https://www.udemy.com/course/fundamentos-de-big-data-com-hadoop/learn/lecture/7584408#overview",
+      "conta": "liboniclever",
+      "descricao": "Torne-se um profissional para trabalhar com an\u00E1lise de dados e entenda de uma vez esse fant\u00E1stico mundo de Big Data."
+   },
+   {
+      "categoria": "contas",
+      "link": "https://www.udemy.com",
+      "conta": "ailtonzsilva@gmail.com",
+      "descricao": "5/3071879\"w"
+   },
+   {
+      "categoria": "contas",
+      "link": "https://www.udemy.com",
+      "conta": "liboniclever@gmail.com",
+      "descricao": "julia@11"
+   },
+   {
+      "categoria": "contas",
+      "link": "https://www.udemy.com",
+      "conta": "masantoro83@yahoo.com.br",
+      "descricao": "Marcao**2017"
+   },
+   {
+      "categoria": "contas",
+      "link": "https://www.udemy.com",
+      "conta": "ribeiro.rs@gmail.com",
+      "descricao": "N!cene5515avirtue"
+   },
+   {
+      "categoria": "contas",
+      "link": "https://www.udemy.com",
+      "conta": "Sakonarthur@gmail.com",
+      "descricao": "72e32exwq"
+   },
+   {
+      "categoria": "digita\u00E7\u00E3o",
+      "link": "https://10fastfingers.com/typing-test/portuguese",
+      "conta": "",
+      "descricao": "Testes de digita\u00E7\u00E3o"
+   },
+   {
+      "categoria": "Django",
+      "link": "https://www.udemy.com/course/try-django-1-10/learn/lecture/5922350#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Django is a powerful web framework that makes it easy to build web applications it's why it's the #1 Python library"
+   },
+   {
+      "categoria": "Git",
+      "link": "https://www.udemy.com/course/git-e-github/learn/lecture/7149846#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Git e contribui\u00E7\u00F5es para projetos Open Source"
+   },
+   {
+      "categoria": "Git & GitHub",
+      "link": "https://www.udemy.com/course/git-and-github-masterclass/learn/lecture/14479156#overview",
+      "conta": "ribeiro.rs",
+      "descricao": "Git & GitHub Masterclass"
+   },
+   {
+      "categoria": "GitHub",
+      "link": "https://www.udemy.com/course/github-pages/learn/lecture/5336184#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Criando P\u00E1ginas Web com o GitHub Pages"
+   },
+   {
+      "categoria": "github",
+      "link": "https://www.udemy.com/course/git-e-github-para-iniciantes/learn/lecture/5120576#overview",
+      "conta": "masantoro83",
+      "descricao": "Tudo que voc\u00EA precisa para come\u00E7ar a versionar seus arquivos e contribuir com a comunidade opensource."
+   },
+   {
+      "categoria": "Hands-On Python & R",
+      "link": "https://www.udemy.com/course/machinelearning/learn/lecture/5728032#overview",
+      "conta": "ribeiro.rs",
+      "descricao": "Machine Learning A-Z\u2122: Hands-On Python & R In Data Science"
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/curso-de-performance-web/learn/lecture/7784704#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda a otimizar a performance de carregamento das suas p\u00E1ginas com v\u00E1rias t\u00E9cnicas de otimiza\u00E7\u00E3o."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/criar-sites-responsivos-sem-programar-facil-e-rapido/learn/lecture/8139943#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda Criar Sites Responsivos de Forma Profissional sem Programar"
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/curso-desenvolvedor-web-full-stack-jr-completo/learn/lecture/9481826#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda desenvolvimento web do zero! HTML, CSS, JavaScript, AJAX, JSON, Bootstrap, WordPress, PHP, MySQL e muito mais."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/brackets/learn/lecture/2736838#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Brackets is the free, open source code editor. Explore its many powerful features in this tutorial!"
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/build-responsive-website-designs-with-html5-and-css/learn/lecture/1067896#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Build a great looking flat design website using a simple but well coded template."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/programacao-web-para-divulgacao-cientifica/learn/lecture/14392784#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Curso completo para aprender a construir sites usando as linguagens web mais conceituadas do mercado"
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/the-essential-web-developer-course/learn/practice/1141794#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "From an absolute beginner, to a certified Web developer, this course will teach you the ABCs of Web development."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/html-and-css-for-beginners-crash-course-learn-fast-easy/learn/lecture/2311804#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "HTML and CSS for Beginners course will give your all the knowledge you need to master HTML and CSS easily and quickly."
+   },
+   {
+      "categoria": "HTML",
+      "link": "https://www.udemy.com/course/introducao-a-linguagem-html/learn/lecture/9891832#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Introdu\u00E7\u00E3o \u00E0 Linguagem HTML"
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/agr-html/learn/lecture/10552788#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "There is no need of any prior knowledge in learning HTML."
+   },
+   {
+      "categoria": "html",
+      "link": "https://www.udemy.com/course/curso-de-design-responsivo/learn/lecture/7031022#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Web Design Responsivo na pr\u00E1tica"
+   },
+   {
+      "categoria": "Java",
+      "link": "https://www.udemy.com/course/java-multithreading/learn/lecture/107238#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Unveiling the mysteries of multithreading in Java. The ultimate Java multithreading course"
+   },
+   {
+      "categoria": "mec",
+      "link": "http://avamec.mec.gov.br/#/curso/listar",
+      "conta": "mec",
+      "descricao": ""
+   },
+   {
+      "categoria": "MongoDB",
+      "link": "https://www.udemy.com/course/mongo-db-with-node-express/learn/lecture/11537624#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Begin your journey to a full stack JavaScript developer by learning how to store data using Mongo DB."
+   },
+   {
+      "categoria": "MongoDB",
+      "link": "https://www.udemy.com/course/mongodb-atlas/learn/lecture/16951312#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "MongoDB, NoSql e Big Data nas Nuvens Microsoft Azure, Amazon AWS, Google Cloud Platform! Domine do zero, sem mist\u00E9rios!"
+   },
+   {
+      "categoria": "MongoDB",
+      "link": "https://www.udemy.com/course/mongodb-nosql/learn/lecture/10452398#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Torne-se um Expert NoSQL/MongoDB/Cloud e Domine Sem Mist\u00E9rios! Especial para DEVs/DBAs SQL, Oracle, MySQL, PostgreSQL!"
+   },
+   {
+      "categoria": "Node",
+      "link": "https://www.udemy.com/course/draft/595294/learn/lecture/3524074#overview",
+      "conta": "masantoro83",
+      "descricao": "Node basics and fundamentals to make you ready to create any web app using express, jade and node modules."
+   },
+   {
+      "categoria": "NodeJS",
+      "link": "https://www.udemy.com/course/expressjs-fundamentals/learn/lecture/4237314#overview",
+      "conta": "masantoro83",
+      "descricao": "A Beginner's Guide to Building RESTful Web Applications with NodeJS and Express"
+   },
+   {
+      "categoria": "NodeJS",
+      "link": "https://www.udemy.com/course/telegram-firebase-bot/learn/lecture/13744316#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Create a Weather Telegram Bot using NodeJS and Firebase Cloud Functions"
+   },
+   {
+      "categoria": "Perl",
+      "link": "https://www.udemy.com/course/programacao_em_perl/learn/lecture/14564468#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Curso de programa\u00E7\u00E3o com Perl para Bioinform\u00E1tica"
+   },
+   {
+      "categoria": "PowerShell",
+      "link": "https://www.udemy.com/course/automatizando-administracao-com-powershell-curso-10961/learn/lecture/11483792#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Ensina desde como buscar e reconhecer os CMDLETs mais comuns at\u00E9 a forma\u00E7\u00E3o de output na tela!"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/python-mysql/learn/lecture/14394468#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda com especialistas a construir programas de computador com a linguagem Python e banco de dados MySQL"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/python_para_bioinformatica/learn/lecture/14392766#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprenda programa\u00E7\u00E3o com a linguagem Python para manipula\u00E7\u00E3o de dados biol\u00F3gicos e pesquisas cient\u00EDficas"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/visualizacao-de-dados-com-python/learn/lecture/12615774#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Data Science: Visualiza\u00E7\u00E3o de Dados com Python"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/deep-learning-prerequisites-the-numpy-stack-in-python/learn/lecture/5857370#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Deep Learning Prerequisites: The Numpy Stack in Python"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/web-engineering-with-python-and-web2py/learn/lecture/2240798#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Enjoy learning programming with Python, building web-apps you publish on the web."
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/graphs-and-social-network-analytics-for-dummies-using-python/learn/lecture/4171696?start=0#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Python - This course is absolutely designed for beginners , graph enthusiast ready to analyze the world using graphs"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/python-masterclass-for-beginners/learn/lecture/12851018#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Python for beginners! Create Python 3 Real-World Applications from Scratch. In this Python 3 Course."
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/python-para-data-science-e-machine-learning/learn/lecture/8330422#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Python para Data Science e Machine Learning - COMPLETO"
+   },
+   {
+      "categoria": "Python",
+      "link": "https://www.udemy.com/course/python-para-iniciantes/learn/lecture/12824279#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Python para Iniciantes"
+   },
+   {
+      "categoria": "Python3",
+      "link": "https://www.udemy.com/course/aprenda-a-programar-em-python-com-facilidade-do-zero/learn/lecture/7752166#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Domine o Python3! Curso Completo com Exerc\u00EDcios e Projetos + B\u00F4nus Especial: Machine Learning Supervisionado em Python!"
+   },
+   {
+      "categoria": "Scrum",
+      "link": "https://www.udemy.com/course/formacao-total-em-scrum/learn/lecture/9911796#overview",
+      "conta": "Sakonarthur",
+      "descricao": "Certifica\u00E7\u00E3o Scrum Master: Curso Preparat\u00F3rio COMPLETO"
+   },
+   {
+      "categoria": "Selenium",
+      "link": "https://www.udemy.com/course/robot-frameworkride-selenium-step-by-step-for-beginners/learn/lecture/10115628#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Learn selenium automation with Robot Framework from scratch"
+   },
+   {
+      "categoria": "Selenium",
+      "link": "https://www.udemy.com/course/selenium-qa/learn/lecture/4640672#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Selenium is the most popular tool to test websites! Join me and thousands of students to learn Selenium Webdriver!"
+   },
+   {
+      "categoria": "Selenium",
+      "link": "https://www.udemy.com/course/selenium-qa/learn/lecture/4640690#overview",
+      "conta": "ribeiro.rs",
+      "descricao": "Selenium WebDriver with C# for Beginners + Live Testing Site"
+   },
+   {
+      "categoria": "Selenium",
+      "link": "https://www.udemy.com/course/learn-testng-using-intellij-idea/learn/lecture/14410032#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "TestNG Framework using IntelliJ IDE for Selenium Automation Testers"
+   },
+   {
+      "categoria": "Snapchat app",
+      "link": "https://www.udemy.com/course/status-whatsapp/learn/lecture/14664092#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Crie um aplicativo de fotos tempor\u00E1rias baseado no Status do Whatsapp, Stories do Instagram e Snapchat!"
+   },
+   {
+      "categoria": "Spring Boot",
+      "link": "https://www.udemy.com/course/spring-core/learn/lecture/4490768#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Build a web application using Spring Framework 4 and Spring Boot"
+   },
+   {
+      "categoria": "Swift",
+      "link": "https://www.udemy.com/course/aprendendoswift3/learn/lecture/5937934#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Aprendendo Swift 3 do Iniciante ao Avan\u00E7ado"
+   },
+   {
+      "categoria": "VirtualBox",
+      "link": "https://www.udemy.com/course/virtualizacao-com-oracle-virtualbox/learn/lecture/6433318#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Como criar m\u00E1quinas virtuais para pr\u00E1tica de cursos e estudos sem afetar a sua m\u00E1quina real, passo a passo!!"
+   },
+   {
+      "categoria": "VirtualBox",
+      "link": "https://www.udemy.com/course/crie-seu-ambiente-de-laboratorio-com-virtualbox/learn/lecture/6832124#overview",
+      "conta": "ailtonzsilva",
+      "descricao": "Fa\u00E7a provas de conceito, testes de softwares e sistemas operacionais em um ambiente isolado do seu sistema f\u00EDsico."
+   },
+   {
+      "categoria": "servi\u00E7os",
+      "link": "https://www.listennotes.com/pt/",
+      "conta": "",
+      "descricao": ""
+   },
+   {
+      "categoria": "avanade",
+      "link": "https://web.microsoftstream.com/?retry=0",
+      "conta": "",
+      "descricao": ""
+   }
+]

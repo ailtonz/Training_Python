@@ -1,0 +1,27 @@
+###
+###
+###
+### Category1 : Service Packs and Hot Fixes
+### Category2 : 
+### Category3 : 
+### Description : Returns a list of all the hot fixes installed on a computer.
+###
+###
+###
+import win32com.client
+strComputer = "."
+objWMIService = win32com.client.Dispatch("WbemScripting.SWbemLocator")
+objSWbemServices = objWMIService.ConnectServer(strComputer,"root\cimv2")
+colItems = objSWbemServices.ExecQuery("Select * from Win32_QuickFixEngineering")
+for objItem in colItems:
+    print "Caption: ", objItem.Caption
+    print "CS Name: ", objItem.CSName
+    print "Description: ", objItem.Description
+    print "Fix Comments: ", objItem.FixComments
+    print "HotFix ID: ", objItem.HotFixID
+    print "Install Date: ", objItem.InstallDate
+    print "Installed By: ", objItem.InstalledBy
+    print "Installed On: ", objItem.InstalledOn
+    print "Name: ", objItem.Name
+    print "Service Pack In Effect: ", objItem.ServicePackInEffect
+    print "Status: ", objItem.Status

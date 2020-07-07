@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="101ea242-9f98-4f41-bede-a8478d3d71b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scripts.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Event Log Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List IP4 Route Table Information.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Keyboard Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Modem Information.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Motherboard Device Information.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Network Adapter Configuration Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Page File Settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Page File Use.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Parallel Port Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Physical Disk Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Printer Capabilities.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Serial Port Configuration Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Service Properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Terminal Services Logon Settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Terminal Services Remote Control Settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Terminal Services Terminal Settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List Terminal Services Terminals.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List WMI Setting Information.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List the Boot Configuration Properties of a Computer.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eKzMJU2T4BG3wIqsIlq8FEHj0K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager" selected="Python.testerJson">
+    <configuration name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\dev\kivy\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testerJson" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\dev\kivy\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testerJson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.teste" />
+      <item itemvalue="Python.testerJson" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testerJson" />
+        <item itemvalue="Python.teste" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="101ea242-9f98-4f41-bede-a8478d3d71b3" name="Default Changelist" comment="" />
+      <created>1594083427970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594083427970</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1594085496389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594085496390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594086019665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594086019665" />
+    <state x="669" y="98" key="#teste" timestamp="1594085673189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="98" key="#teste/0.0.1920.1040@0.0.1920.1040" timestamp="1594085673189" />
+    <state x="669" y="98" key="#testerJson" timestamp="1594086695752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="98" key="#testerJson/0.0.1920.1040@0.0.1920.1040" timestamp="1594086695752" />
+    <state x="603" y="109" key="CommitChangelistDialog2" timestamp="1594085496410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="603" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594085496410" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1594086631022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594086631022" />
+    <state x="784" y="440" key="Github.CreateGistDialog" timestamp="1594086491512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594086491512" />
+    <state width="949" height="281" key="GridCell.Tab.0.bottom" timestamp="1594086674759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594086674759" />
+    <state width="949" height="281" key="GridCell.Tab.0.center" timestamp="1594086674758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594086674758" />
+    <state width="949" height="281" key="GridCell.Tab.0.left" timestamp="1594086674758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594086674758" />
+    <state width="949" height="281" key="GridCell.Tab.0.right" timestamp="1594086674759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594086674759" />
+  </component>
+</project>
