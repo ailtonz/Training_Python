@@ -1,5 +1,17 @@
 # Python
 
+
+
+
+https://www.udemy.com/course/curso-de-python-android-ios-windows-linux-mac/
+
+- Leitura
+
+* Tarefas maçantes
+* Curso itensivo
+* Primeiros programas
+
+
 [Curso de Python]( http://www.youtube.com/playlist?list=PLx4x_zx8csUhuVgWfy7keQQAy7t1J35TR)
 
 
